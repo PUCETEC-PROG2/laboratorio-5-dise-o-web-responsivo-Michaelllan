@@ -1,0 +1,83 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+.pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:  16px;
+    padding: 16px 0;
+
+}
+
+.pokemon-card {
+    background-color: rgb(187, 177, 158);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(194, 67, 67, 0.3)0, 0.3);
+    overflow: hidden;
+    flex: calc(33.333333% - 32px);
+    min-width: 250px;
+}
+
+.pokemon-image {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    background: linear-gradient(135deg, #3f396d);
+}
+
+.pokemon-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.pokemon-name {
+    font-size: 18pt;
+    text-transform: capitalize;
+    color: rgb(90, 105, 64);
+}
+.pokemon-type {
+    border-radius: 20px;
+    padding: 10px 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: beige;
+    font-weight: bolder;
+
+}
+.type-electric {
+    background: linear-gradient(#0d055c);
+}
+
+.type-grass {
+    background: linear-gradient(#266630)
+    
+}
+.type-water {
+    background: linear-gradient(#32a0a8)
+    
+}
+.type-fire {
+    background: linear-gradient(#8d241c)
+    
+}
+.type-normal {
+    background: linear-gradient(#99a8a4, #8d241c)
+    
+}
+.type-ghost {
+    background: linear-gradient(#7b807c, #000000)
+    
+}
+.type-psychic {
+    background: linear-gradient(#665c26, #0d055c)
+    
+}
+
+@media screen and (max-width: 900
