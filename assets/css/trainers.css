@@ -1,0 +1,30 @@
+/* trainers.css */
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas como pediste */
+    gap: 30px;
+    padding: 20px;
+}
+
+.trainer-card {
+    background-color: white; /* Fondo blanco */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.trainer-image {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.trainer-info {
+    background-color: #e9ecef; /* Barra gris abajo */
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
