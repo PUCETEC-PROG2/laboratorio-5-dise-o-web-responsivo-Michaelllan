@@ -1,13 +1,13 @@
-/* trainers.css */
+
 .trainers-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas como pediste */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
     padding: 20px;
 }
 
 .trainer-card {
-    background-color: white; /* Fondo blanco */
+    background-color: rgb(240, 192, 153); 
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -21,10 +21,81 @@
     object-fit: contain;
 }
 
+
 .trainer-info {
-    background-color: #e9ecef; /* Barra gris abajo */
+    background-color: #a39c3b; 
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-top: 1px solid #8fa53f;
+}
+
+
+.trainer-name {
+    font-size: 1rem;
+    font-weight: 900; 
+    text-transform: uppercase;
+    color: #212529;
+    margin: 0;
+}
+
+
+.trainer-details {
+    display: flex;
+    gap: 15px; 
+    font-size: 0.85rem;
+    color: #495057;
+    font-weight: 600;
+}
+
+.trainer-details p {
+    margin: 0;
+}
+
+
+.trainer-status {
+    padding: 8px 16px;
+    border-radius: 50px; 
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+
+.status-active {
+    background-color: #2da44e; 
+}
+
+.status-champion {
+    background-color: #0969da; 
+}
+
+.status-investigador{
+    background-color: #945d2a; 
+}
+
+
+.trainer-info {
+    background-color: #e9ecef; 
     padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid #dee2e6; 
+}
+@media (max-width: 600px) {
+    .trainer-info {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .trainer-details {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
